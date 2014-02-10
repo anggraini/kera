@@ -1,0 +1,25 @@
+html, body, #map-canvas{
+	height: 100%;
+}
+body {
+	margin:0;
+	padding-top:60px;
+}
+
+#formulirpembelianrumah .navbar{
+	background-color: #F8F8F8;
+	border-color: #E7E7E7;
+}
+
+#windowAlertModal{
+	z-index: 1041;
+}
+
+@media (min-width: 768px){
+	.navbar-form.navbar-right {
+		width: 300px;
+	}
+	#map-canvar{
+		height: 25px;
+	}
+}

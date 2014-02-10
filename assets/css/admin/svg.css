@@ -1,0 +1,23 @@
+#svg-petarumah g rect{
+	opacity:0.6;
+	fill:#fff;
+	fill-opacity:1;
+	stroke:none
+}
+
+#svg-petarumah g#fasum rect{
+	fill:#808000;
+}
+
+#svg-petarumah g rect[data-rumah-status]:hover{
+	cursor: pointer;
+}
+#svg-petarumah g rect[data-rumah-status='0']{
+	fill: #0F0;
+}
+#svg-petarumah g rect[data-rumah-status='1']{
+	fill: #FFAD00;
+}
+#svg-petarumah g rect[data-rumah-status='2']{
+	fill: #F00;
+}

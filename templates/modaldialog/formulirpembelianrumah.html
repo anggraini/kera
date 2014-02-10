@@ -1,0 +1,210 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header alert alert-success">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4 class="modal-title" id="modallabel">Formulir pembelian rumah <%= blok_nama %> no <%= no %></h4>
+		</div>
+		<div class="modal-body">
+			<div wizard>				
+				<ul>
+					<li><a href="#tab1" data-toggle="tab">Pembeli</a></li>
+					<li><a href="#tab2" data-toggle="tab">Proyek</a></li>
+					<li><a href="#tab3" data-toggle="tab">Total harga jual</a></li>
+					<li><a href="#tab4" data-toggle="tab">Uang muka</a></li>
+					<li><a href="#tab5" data-toggle="tab">Data freelance</a></li>
+				</ul>
+				<ul class="pager wizard">
+					<li class="previous"><a class="btn btn-primary" href="javascript:;"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+					<li class="next"><a class="btn btn-primary" href="javascript:;"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+					<li class="next finish"><a class="btn btn-success" href="javascript:;" data-loading-text="sedang diproses"><span class="glyphicon glyphicon-saved"></span> kirim</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane" id="tab1">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="username" class="col-sm-2 control-label">Nama</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="username" name="pelanggan_nama">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="noktp" class="col-sm-2 control-label">No KTP</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="noktp" name="pelanggan_noktp">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="notelp1" class="col-sm-2 control-label">No telp</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="notelp1" name="pelanggan_notelp1">
+									<input type="text" class="form-control" id="notelp2" name="pelanggan_notelp2">
+									<input type="text" class="form-control" id="notelp3" name="pelanggan_notelp3">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="alamat" class="col-sm-2 control-label">Alamat</label>
+								<div class="col-sm-10">
+									<textarea class="form-control" id="alamat" name="pelanggan_alamat" rows="3"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="tab2">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Proyek</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">xxx</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 col-xs-6 control-label">Blok/No. Unit</label>
+								<div class="col-sm-3 col-xs-6 ">
+									<p class="form-control-static"><%= blok_nama %> No. <%= no %></p>
+								</div>
+								<label class="col-sm-3 col-xs-6 control-label">Luas B/T</label>
+								<div class="col-sm-3 col-xs-6">
+									<p class="form-control-static"><%= tipe_nama %></p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Harga jual dasar</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><%= harga %></p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 col-xs-6 control-label">H. K. tanah <sup>2</sup></label>
+								<div class="col-sm-3 col-xs-6">
+									<p class="form-control-static"><%= kelebihan_tanah %></p>
+								</div>
+								<label class="col-sm-3 col-xs-6 control-label">x Rp. <%= kelebihan_tanah_harga_pertanah %> =</label>
+								<div class="col-sm-3 col-xs-6">
+									<p class="form-control-static">Rp. 7.700.000</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="proyek" class="col-sm-3 col-xs-6 control-label">Hadap timur</label>
+								<div class="col-sm-3 col-xs-6">
+									<p class="form-control-static"><%= hadap_timur %></p>
+								</div>
+								<label for="proyek" class="col-sm-3 col-xs-6 control-label">Hadap taman</label>
+								<div class="col-sm-3 col-xs-6">
+									<p class="form-control-static"><%= hadap_taman %></p>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="tab3">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="proyek" class="col-sm-3 control-label">Total harga jual</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">xxx</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="proyek" class="col-sm-3 control-label">Cara pembayaran</label>
+								<div class="col-sm-9">
+									<div class="radio">
+										<label>
+											<input type="radio" name="carapembayaran" value="1"> Tunai keras (hard cash)
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="carapembayaran" value="2"> Tunai uang muka (plus kelebihan tanah) & KPR
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="carapembayaran" value="3"> Tunai bertahap (progressive cash)
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="carapembayaran" value="4" checked> Cicilan uang muka (plus kelebihan tanah) & KPR
+										</label>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="tab4">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="uangmuka" class="col-sm-3 control-label">Uang muka</label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="uangmuka" name="uangmuka">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="uangtandajadi" class="col-sm-3 control-label">Uang tanda jadi</label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="uangtandajadi" name="uangtandajadi">
+								</div>
+								<div class="col-sm-4">
+									<input type="date" class="form-control" name="uangtandajadi_tgl">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="cicilanuangmuka" class="col-sm-3 control-label">Cicilan uang muka 1</label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="cicilanuangmuka" name="cicilanuangmuka1">
+								</div>
+								<div class="col-sm-4">
+									<input type="date" class="form-control" name="cicilanuangmuka1_tgl">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="cicilanuangmuka2" class="col-sm-3 control-label">Cicilan uang muka ke 2</label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="cicilanuangmuka2" name="cicilanuangmuka2">
+								</div>
+								<div class="col-sm-4">
+									<input type="date" class="form-control" name="cicilanuangmuka2_tgl">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="sampaitanggal15" class="col-sm-3 control-label">s/d tanggal 15</label>
+								<div class="col-sm-4">
+									<input type="date" class="form-control" id="sampaitanggal15" name="sampaitanggal15">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="tab5">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Nama marketing</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">xxx</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="freelance_nama" class="col-sm-3 control-label">Nama freelancer</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="freelance_nama" name="freelance_nama">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="freelance_alamat" class="col-sm-3 control-label">Alamat freelancer</label>
+								<div class="col-sm-9">
+									<textarea class="form-control" id="freelance_alamat" name="freelance_alamat" rows="3"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="freelance_notelp1" class="col-sm-3 control-label">No telepon freelancer</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="freelance_notelp1" name="freelance_notelp1">
+									<input type="text" class="form-control" id="freelance_notelp2" name="freelance_notelp2">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+	

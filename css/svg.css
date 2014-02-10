@@ -1,0 +1,30 @@
+#svg-rumah g rect{
+	opacity:0.6;
+	fill:#fff;
+	fill-opacity:1;
+	stroke:none
+}
+
+#svg-rumah g#fasum rect{
+	fill:#808000;
+}
+
+#svg-rumah g rect[data-rumahstatus_id='1']:hover,
+#svg-rumah g rect[data-rumahstatus_id='2']:hover,
+#svg-rumah g rect[data-rumahstatus_id='3']:hover
+{
+cursor: pointer;
+}
+#svg-rumah g rect[data-rumahstatus_id='1']{
+	fill: #0F0;
+}
+#svg-rumah g rect[data-rumahstatus_id='2']{
+	fill: #FFAD00;
+}
+#svg-rumah g rect[data-rumahstatus_id='3']{
+	fill: #F00;
+}
+
+#svg-rumah g rect[terpilih=true]{
+	opacity: 1;
+}

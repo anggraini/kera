@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>Monitoring Penjualan - Cipta Group</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<meta name="MobileOptimized" content="320">
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="../../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+<link href="../../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/plugins/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/plugins/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css"/>
+<!-- END PAGE LEVEL PLUGIN STYLES -->
+<!-- BEGIN THEME STYLES -->
+<link href="../../assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/css/pages/tasks.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="../../assets/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-sidebar-fixed page-footer-fixed">
+<!-- BEGIN HEADER -->
+<div class="header navbar navbar-inverse navbar-fixed-top">
+  <!-- BEGIN TOP NAVIGATION BAR -->
+  <div class="header-inner">
+    <!-- BEGIN LOGO -->
+    <a class="navbar-brand" href="./">
+    <img src="../../assets/img/logo.png" alt="logo" class="img-responsive"/>
+    </a>
+    <!-- END LOGO -->
+    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+    <a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <img src="../../assets/img/menu-toggler.png" alt=""/>
+    </a>
+    <!-- END RESPONSIVE MENU TOGGLER -->
+    <!-- BEGIN TOP NAVIGATION MENU -->
+    <ul class="nav navbar-nav pull-right">
+      <!-- BEGIN INBOX DROPDOWN -->
+      <li class="dropdown" id="header_inbox_bar">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+        <i class="fa fa-envelope"></i>
+        <span class="badge">
+          12
+        </span>
+        </a>
+        <ul class="dropdown-menu extended inbox">
+          <li>
+            <p>
+              Anda memiliki 12 order baru
+            </p>
+          </li>
+          <li>
+            <ul class="dropdown-menu-list scroller" style="height: 250px;">
+              <li>
+                <a href="./">
+                <span class="subject">
+                  <span class="from">
+                    Surya
+                  </span>
+                  <span class="time">
+                    Marketing
+                  </span>
+                </span>
+                <span class="message">
+                   Cipta Land, Blok M No. 12
+                </span>
+                </a>
+              </li>
+              <li>
+                <a href="./">
+                <span class="subject">
+                  <span class="from">
+                    Joko
+                  </span>
+                  <span class="time">
+                    Marketing
+                  </span>
+                </span>
+                <span class="message">
+                   Cipta Tiban, Blok K No. 90
+                </span>
+                </a>
+              </li>
+              <li>
+                <a href="./">
+                <span class="subject">
+                  <span class="from">
+                    Atik
+                  </span>
+                  <span class="time">
+                    Marketing
+                  </span>
+                </span>
+                <span class="message">
+                   Cipta Mandiri, Blok L No. 01
+                </span>
+                </a>
+              </li>
+              <li>
+                <a href="./">
+                <span class="subject">
+                  <span class="from">
+                    Lisa
+                  </span>
+                  <span class="time">
+                    Manager Marketing
+                  </span>
+                </span>
+                <span class="message">
+                   Cipta Land, Blok D No. 36
+                </span>
+                </a>
+              </li>
+              <li>
+                <a href="./">
+                <span class="subject">
+                  <span class="from">
+                    Bambang
+                  </span>
+                  <span class="time">
+                    Marketing Leader
+                  </span>
+                </span>
+                <span class="message">
+                   Cipta Tiban, Blok H No. 14
+                </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="external">
+            <a href="./">Lihat seluruh pesan <i class="m-icon-swapright"></i></a>
+          </li>
+        </ul>
+      </li>
+      <!-- END INBOX DROPDOWN -->
+      <!-- BEGIN USER LOGIN DROPDOWN -->
+      <li class="dropdown user">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+        <img alt="" src="../../assets/img/avatar1_small.jpg"/>
+        <span class="username">
+          Admin
+        </span>
+        <i class="fa fa-angle-down"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="./"><i class="fa fa-wrench"></i> Edit Password</a>
+          </li>
+          <li>
+            <a href="<?php echo base_url(); ?>admin/logout"><i class="fa fa-sign-out"></i> Keluar</a>
+          </li>
+        </ul>
+      </li>
+      <!-- END USER LOGIN DROPDOWN -->
+    </ul>
+    <!-- END TOP NAVIGATION MENU -->
+  </div>
+  <!-- END TOP NAVIGATION BAR -->
+</div>
+<!-- END HEADER -->
+
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+  <!-- BEGIN SIDEBAR -->
+  <div class="page-sidebar-wrapper ">
+    <div class="page-sidebar navbar-collapse collapse">
+      <!-- BEGIN SIDEBAR MENU -->
+      <ul class="page-sidebar-menu">
+        <li class="sidebar-toggler-wrapper">
+          <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+          <div class="sidebar-toggler hidden-phone">
+          </div>
+          <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+        </li>
+        <li class="start active ">
+          <a href="./">
+          <i class="fa fa-home"></i>
+          <span class="title">
+            Dashboard
+          </span>
+          <span class="selected">
+          </span>
+          </a>
+        </li>
+        <li class="">
+          <a href="javascript:;">
+          <i class="fa fa-book"></i>
+          <span class="title">
+            Laporan
+          </span>
+          <span class="arrow ">
+          </span>
+          </a>
+          <ul class="sub-menu">
+            <li>
+              <a href="orders">
+              <span class="badge badge-roundless badge-important">
+                40
+              </span>
+              Seluruh Rumah</a>
+            </li>
+            <li>
+              <a href="tersedia">
+              <span class="badge badge-roundless badge-important">
+                80
+              </span>
+              Tersedia Rumah</a>
+            </li>
+            <li>
+              <a href="pendings">
+              <span class="badge badge-roundless badge-important">
+                20
+              </span>
+              Pending</a>
+            </li>
+            <li>
+              <a href="terjual">
+              <span class="badge badge-roundless badge-success">
+                150
+              </span>
+              Terjual</a>
+            </li>
+          </ul>
+        </li>
+        <li id="frontend-link" class="tooltips" data-placement="right" data-original-title="">
+          <a href="marketing">
+          <i class="fa fa-group"></i>
+          <span class="title">
+            Marketing
+          </span>
+          </a>
+        </li>
+      </ul>
+      <!-- END SIDEBAR MENU -->
+    </div>
+  </div>
+  <!-- END SIDEBAR -->
+  <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                            <h4 class="modal-title">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                             Widget settings form goes here
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn blue">Save changes</button>
+                            <button type="button" class="btn default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <!-- BEGIN PAGE HEADER-->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                    <ul class="page-breadcrumb breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href="./">Beranda</a>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="#">Laporan</a>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="#">Seluruh Rumah</a>
+                        </li>
+                    </ul>
+                    <!-- END PAGE TITLE & BREADCRUMB-->
+                </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+            <div class="row page">
+                
+            </div>
+            <!-- END PAGE CONTENT-->
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+  <!-- BEGIN FOOTER -->
+<div class="footer">
+    <div class="footer-inner">
+         2014 &copy; Powered by Bisnisbatam.co.id
+    </div>
+    <div class="footer-tools">
+        <span class="go-top">
+            <i class="fa fa-angle-up"></i>
+        </span>
+    </div>
+</div>
+<script type="text/template" id="seluruhrumah">
+    <div class="col-md-12">
+                    <!-- BEGIN SAMPLE TABLE PORTLET-->
+                    <div class="portlet box blue">
+                        <div class="portlet-title">
+                            <div class="caption">
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="table-responsive">
+                            <a href="#/new" class="btn btn-primary">New User</a>
+                            <hr/>
+                                <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        No.
+                                    </th>
+                                    <th>
+                                        Order No.
+                                    </th>
+                                    <th>
+                                        Proyek
+                                    </th>
+                                    <th>
+                                        Blok/No.
+                                    </th>
+                                    <th>
+                                        Luas B/T
+                                    </th>
+                                    <th>
+                                        Nama Konsumen
+                                    </th>
+                                    <th>
+                                        Discount
+                                    </th>
+                                    <th>
+                                        Total
+                                    </th>
+                                    <th>
+                                        Status
+                                    </th>
+                                    <th>
+                                        Aksi
+                                    </th>
+                                </tr>
+                                </thead>
+                                
+                                <tbody>
+                                <% _.each(rumah, function(rumah){ %>
+                                <tr>
+                                    <td>
+                                        <%= rumah.get ('id') %>
+                                    </td>
+                                    <td>
+                                        <%= rumah.get ('id') %>
+                                    </td>
+                                    <td>
+                                        Cipta Mandiri
+                                    </td>
+                                    <td>
+                                        <%= rumah.get ('rumah_id') %>
+                                    </td>
+                                    <td>
+                                        <%= rumah.get ('tipe_id') %>
+                                    </td>
+                                    <td>
+                                        Vincen
+                                    </td>
+                                    <td>
+                                        SHGB + BPHTB
+                                    </td>
+                                    <td>
+                                      <%= rumah.get ('harga') %>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-success">
+                                           <%= rumah.get ('rumahstatus_nama') %>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <% }); %>
+                                </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SAMPLE TABLE PORTLET-->
+                </div>
+    
+    
+    
+    </script>
+
+    <script type="text/template" id="editseluruhrumah">
+    <form class="editseluruhrumah">
+    <legend>Create User</legend>
+    <label>No</label>
+    <input type="text" name="no" />
+        <label>No</label>
+    <input type="text" name="rumahstatus_id" />
+        <label>No</label>
+    <input type="text" name="tipe_id" />
+        <label>No</label>
+    <input type="text" name="no" />
+        <label>No</label>
+    <input type="text" name="no" />
+        <label>No</label>
+    <input type="text" name="no" />
+        <label>No</label>
+    <input type="text" name="no" />
+        <label>No</label>
+    <input type="text" name="no" />
+        <label>harga</label>
+    <input type="text" name="harga" />
+    <hr/>
+    <button type="submit" class="btn">create</button>
+    </form>
+    </script>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="<?php echo base_url(); ?>assets/plugins/respond.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/plugins/excanvas.min.js"></script> 
+<![endif]-->
+
+<script src="../../assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="../../libs/require/require.js"></script>
+<script src="../../libs/underscore/underscore-min.js"></script>
+<script src="../../libs/backbone/backbone-min.js"></script>
+<script src="../../assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../../assets/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../../assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="../../assets/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+<script src="../../assets/plugins/flot/jquery.flot.js" type="text/javascript"></script>
+<script src="../../assets/plugins/flot/jquery.flot.resize.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
+<script src="../../assets/plugins/bootstrap-daterangepicker/moment.min.js" type="text/javascript"></script>
+<script src="../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+<script src="../../assets/plugins/gritter/js/jquery.gritter.js" type="text/javascript"></script>
+<!-- IMPORTANT! fullcalendar depends on jquery-ui-1.10.3.custom.min.js for drag & drop support -->
+<script src="../../assets/plugins/fullcalendar/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jquery-easy-pie-chart/jquery.easy-pie-chart.js" type="text/javascript"></script>
+<script src="../../assets/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="../../assets/scripts/app.js" type="text/javascript"></script>
+<script src="../../assets/scripts/index.js" type="text/javascript"></script>
+<script src="../../assets/scripts/tasks.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+    var Rumah = Backbone.Collection.extend({
+        url: '../../server.php/seluruhorder'
+    });
+
+    var View = Backbone.View.extend({
+    el:'.page',
+    render:function(){
+        var that = this;
+        var rumah = new Rumah();
+        rumah.fetch({
+            success:function(rumah){
+                var template = _.template($('#seluruhrumah').html(), {rumah: rumah.models});
+                that.$el.html(template);
+            }
+        })
+         }
+    });
+
+    var EditUser = Backbone.View.extend({
+        el: '.page',
+        render:function(){
+            var that = this;
+            var template = _.template($('#editseluruhrumah').html(), {});
+            that.$el.html(template);
+        },
+        events:{
+            'submit .editseluruhrumah':'saveUser'
+        },
+            saveUser: function(ev){
+                $(ev.currentTarget);
+            }
+    });
+
+    var Router = Backbone.Router.extend({
+        routes:{
+            '':'home',
+            'new':'editUser'
+        }
+    });
+
+    var view = new View();
+    var editUser = new EditUser();
+    var router = new Router();
+    router.on('route:home', function(){
+        view.render();
+    });
+
+    router.on('route:editUser', function(){
+        editUser.render();
+    });
+
+    Backbone.history.start();
+    </script>
+<script>
+jQuery(document).ready(function() {    
+   App.init(); // initlayout and core plugins
+   Index.init();
+   Index.initJQVMAP(); // init index page's custom scripts
+   Index.initCalendar(); // init index page's custom scripts
+   Index.initCharts(); // init index page's custom scripts
+   Index.initChat();
+   Index.initMiniCharts();
+   Index.initDashboardDaterange();
+   Index.initIntro();
+   Tasks.initDashboardWidget();
+});
+</script>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

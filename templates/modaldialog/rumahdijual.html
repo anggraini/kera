@@ -1,0 +1,15 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header alert alert-success">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title" id="modallabel">Rumah di <%= blok_nama %> No : <%= no %></h4>
+    </div>
+    <div class="modal-body">
+      <div>
+        <span>Harga : Rp. <strong><% print(numeral(parseInt(harga)).format('0,0')) %></strong></span>
+        <button class="btn btn btn-success" type="button" beli><strong>Beli</strong></button>
+      </div>
+      <div><img src="images/rumah.jpg" class="img-responsive"></div>
+    </div>
+  </div>
+</div>
